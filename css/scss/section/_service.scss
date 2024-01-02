@@ -1,0 +1,70 @@
+.service {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:not(:last-child) {
+            width: 25%;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-family: $font-dosis;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        color: $color-white;
+    }
+
+    @media screen and (max-width: 1020px) {
+        &__img {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__card {
+            width: 100% !important;
+            max-width: 220px;
+
+            &:not(:last-child){
+                margin-bottom: 40px;
+            }
+        }
+
+        &__img{
+            margin-bottom: 10px;
+        }
+    }
+}

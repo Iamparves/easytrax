@@ -1,0 +1,62 @@
+.confused {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 30%;
+    }
+
+    &__img--box {
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 210px;
+    }
+
+    &__text {
+        font-size: 15px;
+        font-family: $font-open;
+        color: rgba($color-blue-1, .85);
+        line-height: 1.5;
+    }
+
+    @media screen and (max-width: 1020px) {
+        &__card {
+            width: 45%;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__card {
+            width: 48%;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        &__inner {
+            justify-content: center;
+        }
+
+        &__card {
+            width: 100%;
+            max-width: 460px;
+        }
+
+        &__img--box {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__text{
+            text-align: center;
+        }
+    }
+}

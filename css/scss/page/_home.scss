@@ -1,0 +1,256 @@
+.solution {
+    background: $color-white;
+    padding: 100px 0 180px;
+    position: relative;
+
+    .section__top {
+        max-width: 500px;
+        position: relative;
+    }
+
+    &__divider--bottom {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.feature {
+    background: $color-blue-4;
+    padding: 90px 0 50px;
+    position: relative;
+
+    .section__top {
+        max-width: 650px;
+    }
+}
+
+.statistics {
+    background: linear-gradient($color-blue-4 50%, $color-white 50%);
+    padding: 50px 0;
+}
+
+.approved {
+    padding: 80px 0 100px;
+    background: $color-white;
+
+    .section__top {
+        max-width: 650px;
+    }
+}
+
+.telecom {
+    padding: 80px 0 70px;
+    background: $color-blue-3;
+
+    .section__top {
+        max-width: 650px;
+    }
+}
+
+.tension {
+    padding: 80px 0;
+    background: $color-white;
+}
+
+.mobile {
+    padding: 80px 0 100px;
+    background: $color-white;
+    position: relative;
+
+    &__divider--bottom {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.pricing {
+    padding: 90px 0 0;
+    background: $color-grey-1;
+
+    .section__top {
+        max-width: 700px;
+    }
+}
+
+.comparison {
+    padding: 220px 0 200px;
+    background: $color-blue-4;
+    position: relative;
+
+    .section__top {
+        max-width: 700px;
+    }
+
+    &__divider--top {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__divider--bottom {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.confused {
+    padding: 60px 0 80px;
+    background: $color-white;
+
+    .section__top {
+        max-width: 600px;
+    }
+}
+
+.callback {
+    padding: 100px 0;
+    background: $color-grey-1;
+}
+
+.web {
+    padding: 80px 0;
+    background: $color-white;
+
+    .section__top {
+        max-width: 700px;
+    }
+}
+
+.testimonial {
+    background: $color-white;
+
+    &__inner {
+        padding: 100px 0;
+        background: $color-blue-3;
+        clip-path: polygon(0 0, calc(50% - 50px) 0, 50% 50px, calc(50% + 50px) 0, 100% 0, 100% 100%, 0 100%)
+    }
+
+    .section__top {
+        max-width: 550px;
+    }
+}
+
+.client {
+    padding: 100px 0;
+    background: $color-white;
+
+    .section__top {
+        max-width: 480px;
+    }
+}
+
+.app {
+    padding: 100px 0;
+    background: url(../img/app-bg.png) no-repeat center center / cover;
+}
+
+.service {
+    padding: 80px 0;
+    background: $color-primary;
+    background: linear-gradient(#24a7fd, #0d94ee);
+}
+
+.payment {
+    padding: 80px 0;
+    background: $color-white;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .solution {
+        padding: 40px 0 150px;
+    }
+
+    .comparison {
+        padding: 160px 0 180px;
+    }
+
+    .callback,
+    .app {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .statistics {
+        background: $color-white;
+    }
+
+    .approved {
+        padding: 60px 0 80px;
+    }
+
+    .mobile {
+        padding: 20px 0 100px;
+    }
+
+    .pricing {
+        padding: 60px 0 0;
+    }
+
+    .comparison {
+        padding: 150px 0 140px;
+    }
+
+    .client {
+        padding: 80px 0;
+    }
+
+    .service,
+    .payment {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .solution {
+        padding: 0 0 120px;
+    }
+
+    .feature{
+        padding: 70px 0 50px;
+    }
+
+    .comparison {
+        padding: 120px 0;
+    }
+
+    .callback {
+        padding: 60px 0;
+    }
+
+    .web,
+    .app{
+        padding: 60px 0;
+    }
+
+    .testimonial__inner{
+        padding: 100px 0 70px;
+    }
+}

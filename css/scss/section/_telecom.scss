@@ -1,0 +1,20 @@
+.telecom {
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__img--box{
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__img--box:not(:last-child){
+            margin-right: 0;
+        }
+    }
+}

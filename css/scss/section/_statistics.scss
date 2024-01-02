@@ -1,0 +1,70 @@
+.statistics {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        background: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        border-radius: 5px;
+        width: 25%;
+        max-width: 250px;
+        border: 1px solid rgba($color-black, .15);
+        box-shadow: 0 5px 20px rgba($color-black, 0);
+        transition: .5s ease;
+
+        &:hover {
+            border: 1px solid rgba($color-black, 0);
+            box-shadow: 0 5px 25px rgba($color-black, .1);
+        }
+    }
+
+    &__icon {
+        width: 40px;
+        margin-right: 25px;
+    }
+
+    &__count {
+        font-family: $font-montserrat;
+        font-weight: 500;
+        font-size: 22px;
+        color: $color-black;
+    }
+
+    &__text {
+        font-family: $font-open;
+        color: $color-blue-1;
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 1220px) {
+        &__card{
+            width: 24%;
+            padding: 30px 20px;
+        }
+    }
+
+    @media screen and (max-width: 1020px) {
+        &__inner{
+            justify-content: space-around;
+        }
+
+        &__card{
+            width: 45%;
+            max-width: unset;
+            margin: 15px 0;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        &__card{
+            width: 100%;
+            max-width: 260px;
+        }
+    }
+}
